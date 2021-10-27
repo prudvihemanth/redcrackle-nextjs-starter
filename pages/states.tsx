@@ -11,7 +11,7 @@ function States({states}) {
 
     <ul>
         {states.map((state: any) => (
-          <li key="{state.city}">{state.city}</li>
+          <li key="{state.id}">{state.city}</li>
         ))}
       </ul>
       <h2>

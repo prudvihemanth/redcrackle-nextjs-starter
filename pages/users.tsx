@@ -11,7 +11,7 @@ function Users({users}) {
         <h3>Below are the list of Users:</h3>
     <ul>
         {users.map((user: any) => (
-          <li>{user.name}</li>
+          <li key="{user.id}">{user.name}</li>
         ))}
       </ul>
       <h2>

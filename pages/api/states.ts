@@ -30,7 +30,7 @@ async function getStates(req: NextApiRequest, res:NextApiResponse){
     } catch (error) {
         // return the error
         return res.json({
-            message: new Error(error).message,
+            message: "err in api call",
             success: false,
         });
     }
