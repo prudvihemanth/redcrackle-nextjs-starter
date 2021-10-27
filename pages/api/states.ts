@@ -1,7 +1,9 @@
 const { connectToDatabase } = require('../../lib/mongodb');
 const ObjectId = require('mongodb').ObjectId;
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function handler(req, res) {
+
+export default async function handler(req: NextApiRequest, res:NextApiResponse) {
     // switch the methods
     switch (req.method) {
         case 'GET': {
@@ -10,7 +12,7 @@ export default async function handler(req, res) {
     }
 }
 
-async function getStates(req,res){
+async function getStates(req: NextApiRequest, res:NextApiResponse){
     try {
         // connect to the database
         let { db } = await connectToDatabase();
