@@ -11,6 +11,6 @@
 3.  **Use Css frameworks like: CSS in JS, Bootstrap**
 
 4.  **Use Testing Frameworks - Jest (Unit & Integration testing), Cypress (E2E testing)**
-5.  **Use Mongodb.**
+5.  **Use Mongodb and create api to fetch data.**
 6.  **Make it PWA.**
 7.  **Use Vercel to deploy**
